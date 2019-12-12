@@ -1,12 +1,12 @@
 .home {
-
+  
   .welcome{
     border-bottom: 2px dashed @navigation-border;
     border-width: 100%;
       .welcomeImg{
         padding-bottom: 2%;
-      }
-  }
+      }//welcomeImg
+  }//welcome
 
   .content-section {
     margin: 30px 0;
@@ -14,37 +14,51 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
+        @media @phone {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }//media query phone
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+      .phoneSizing;
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      .phoneSizing;
+
+
 
       img {
         border-radius: 10px;
-      }
-    }
-  }
+        .phoneSizing;
+      }//img
+    }//img-content
+  }//this closes content-section
 
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
+    @media @phone {
+      flex-direction: column-reverse;
+      justify-content: center;
+    }//media query phone
+
     .text-content {
       padding-left: 1%;
       padding-right: 0;
-    }
+    }//text-content
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
-    }
-  }
+    }//img-content
+  }//inverse-content
 
   .content-destination {
     width: 75%;
@@ -52,22 +66,32 @@
 
     img {
       border-radius: 10px;
-    }
-  }
+    }//img
+  }//content-destination
 
   .content-pick {
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
-
+    @media @phone {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
     .destination {
       width: 30%;
       margin-bottom: 30px;
-
+      @media @phone {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+      }
         .btn{
           .buttons();
-        }
-    }
-  }
+        }//btn
+    }//destination
+  }//content-pick
 }// home
