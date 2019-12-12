@@ -1,23 +1,28 @@
 // Navigation Styles here
 header{
     display: flex;
-    border-bottom: 2px dashed grey;
+    border-bottom: 2px dashed @navigation-border;
     padding: 2%;
+    margin: 0% 2%;
 
     h1{
-    width: 50%;
+         width: 50%;
     }//this closes header
 
     nav{
-    width: 50%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+        width: 50%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
 
         a{
             font-size: 2rem;
+            text-decoration: none;
+            color: black;
 
-
+                &:hover{
+                    color: @eastern-blue;
+                }//this closes a hover
 
         }//this closes a
     }//This closes nav

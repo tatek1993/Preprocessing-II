@@ -170,8 +170,9 @@ img {
 }
 header {
   display: flex;
-  border-bottom: 2px dashed grey;
+  border-bottom: 2px dashed #C0C0C0;
   padding: 2%;
+  margin: 0% 2%;
 }
 header h1 {
   width: 50%;
@@ -184,6 +185,11 @@ header nav {
 }
 header nav a {
   font-size: 2rem;
+  text-decoration: none;
+  color: black;
+}
+header nav a:hover {
+  color: #17A2B8;
 }
 .footer {
   width: 100%;
@@ -195,6 +201,13 @@ header nav a {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home .welcome {
+  border-bottom: 2px dashed #C0C0C0;
+  border-width: 100%;
+}
+.home .welcome .welcomeImg {
+  padding-bottom: 2%;
 }
 .home .content-section {
   margin: 30px 0;
@@ -241,4 +254,14 @@ header nav a {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  background-color: #17A2B8;
+  width: 200px;
+  height: 45px;
+  border-radius: 15px;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  padding: 11px;
 }
