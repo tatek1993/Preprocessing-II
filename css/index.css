@@ -168,31 +168,24 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-header {
-  border-bottom: 2px dashed #C0C0C0;
-}
-header .headerDiv {
-  display: flex;
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 2% 0%;
-}
-header .headerDiv h1 {
-  width: 50%;
-}
-header .headerDiv nav {
+nav {
   width: 50%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
-header .headerDiv nav a {
+@media ( max-width: 500px) {
+  nav {
+    width: 100%;
+    padding-top: 2%;
+  }
+}
+nav a {
   font-size: 2rem;
   text-decoration: none;
   color: black;
 }
-header .headerDiv nav a:hover {
+nav a:hover {
   color: #17A2B8;
 }
 .footer {
@@ -205,6 +198,32 @@ header .headerDiv nav a:hover {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+header {
+  border-bottom: 2px dashed #C0C0C0;
+}
+header .headerDiv {
+  display: flex;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2% 0%;
+}
+@media ( max-width: 500px) {
+  header .headerDiv {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+header .headerDiv h1 {
+  width: 50%;
+}
+@media ( max-width: 500px) {
+  .home {
+    padding: 0% 3%;
+  }
 }
 .home .welcome {
   border-bottom: 2px dashed #C0C0C0;
