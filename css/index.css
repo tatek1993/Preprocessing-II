@@ -169,25 +169,30 @@ img {
   margin: 0 auto;
 }
 header {
-  display: flex;
   border-bottom: 2px dashed #C0C0C0;
-  padding: 2% 10%;
 }
-header h1 {
+header .headerDiv {
+  display: flex;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2% 0%;
+}
+header .headerDiv h1 {
   width: 50%;
 }
-header nav {
+header .headerDiv nav {
   width: 50%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
-header nav a {
+header .headerDiv nav a {
   font-size: 2rem;
   text-decoration: none;
   color: black;
 }
-header nav a:hover {
+header .headerDiv nav a:hover {
   color: #17A2B8;
 }
 .footer {
