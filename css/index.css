@@ -171,8 +171,7 @@ img {
 header {
   display: flex;
   border-bottom: 2px dashed #C0C0C0;
-  padding: 2%;
-  margin: 0% 2%;
+  padding: 2% 10%;
 }
 header h1 {
   width: 50%;
