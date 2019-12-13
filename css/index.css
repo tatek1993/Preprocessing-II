@@ -312,6 +312,7 @@ header .headerDiv h1 {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+  align-items: flex-end;
 }
 @media ( max-width: 500px) {
   .home .content-pick .destination {
