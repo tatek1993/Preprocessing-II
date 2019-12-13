@@ -1,1 +1,25 @@
 // Mixins in here
+.buttons(){
+    background-color: @button-bg;
+    width: 80%;
+    height: 20%;
+    border-radius: 15px;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    padding: 5%;
+}
+
+
+.pageMargins(@max-width){
+    max-width: @max-width;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.phoneSizing(){
+    @media @phone {
+        width: 100%;
+        
+      }
+}
